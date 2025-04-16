@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="weatherApp.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Weather app</h1>
+            <form>
+                <label for="city"></label>
+                <input placeholder="City" type="text" id="city" name="city">
+                <button id="btn-Search">Search</button>
+            </form>
+            <section class="weather-forecast hidden">
+                <div class="city-wrapper">
+                    <p id="city-country"></p>
+                </div>
+                <div class="temperature">
+                    <h3 id="temp"></h3>
+                    <p id="feels_like"></p>
+                </div>
+                <div class="weather">
+                    <h3 id="main"></h3>
+                    <p id="description"></p>
+                </div>
+                <div class="icon"></div>
+                <div class="btn-close-wrapper">
+                    <button data-button-type="clicked" class="btn-close">Close</button>
+                </div>
+            </section>
+            <section class="section-error hidden" >
+                <div>
+                    <h2 id="cod"></h2>
+                    <p id="message"></p>
+                    <button data-button-type="clicked" class="btn-close" id="btn-error"> Close</button>
+                </div>
+            </section>
+        </div>
+
+        <script src="weatherApp.js"></script>
+    </body>
+</html>

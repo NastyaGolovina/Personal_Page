@@ -1,0 +1,138 @@
+* {
+    /*font-family: "Comic Sans MS", sans-serif;*/
+    font-family: "Courier New", sans-serif;
+}
+body {
+    background-color: ghostwhite;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  25px 375px 375px;
+    grid-template-areas:
+                "crossword-container  chekButton"
+                "crossword-container questionH"
+                "crossword-container questionV"
+    ;
+}
+.question-horizontally {
+    grid-area: questionH;
+    text-align: center;
+}
+.question-vertically{
+    grid-area: questionV;
+    text-align: center;
+}
+.chek-button {
+    grid-area: chekButton;
+    display: flex;
+    justify-content: flex-end;
+}
+.crossword-container {
+    width: 1000px;
+    height: 775px;
+    border: darkblue solid 1px;
+    background-clip: padding-box;
+    grid-area: crossword-container;
+    background-color: snow;
+
+}
+.square {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    box-sizing: border-box ;
+    vertical-align: top;
+}
+input {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.cell {
+    border: black 1px solid;
+    background-color: ghostwhite;
+    color: black;
+}
+.cell-active {
+    background-color: cornflowerblue;
+    border: darkblue 1px solid;
+    color: snow;
+    font-weight: bold;
+}
+
+.right {
+    background-color: lightgreen;
+    color: forestgreen;
+    border: green solid 1px;
+}
+.wrong {
+    background-color: pink;
+    color: crimson;
+    border: firebrick solid 1px;
+}
+
+.container-question > p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.question {
+    color: black;
+}
+.question-active {
+    background-color: darkblue;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.container-question {
+    height: 260px;
+    overflow-y: scroll;
+}
+input:focus {
+    background-color: darkblue;
+}
+button {
+    border: cornflowerblue 2px solid;
+    cursor: pointer;
+    background-color: snow;
+    font-size: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+.mini-number {
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 9px;
+    position: relative;
+    bottom: 24px;
+    left: 2px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+h1 {
+    color: darkblue;
+    text-shadow: 0 4px 4px rgba(0, 0, 139, 0.5);
+}
+button:hover {
+    background-color: darkblue;
+    border: seashell solid 2px;
+    color: seashell;
+    font-weight: bolder;
+}
+
+
+

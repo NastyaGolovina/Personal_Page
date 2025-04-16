@@ -1,0 +1,13 @@
+.infobox {
+    height: auto;
+    min-height: 300px;
+    overflow: auto;
+    width: 90%;
+    border-radius: 21px 21px 21px 21px;
+
+}
+
+.img-size {
+    max-width: 100%;
+    height: auto;
+}

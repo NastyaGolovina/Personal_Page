@@ -1,0 +1,102 @@
+* {
+    color: white;
+    font-family: sans-serif ;
+}
+
+.section-error {
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+}
+section {
+    width: 600px;
+    background-color: #1a202c;
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 150px 50px;
+    grid-template-areas:
+                "city-wrapper city-wrapper city-wrapper"
+                "temperature weather wicon "
+                "btn btn btn";
+}
+.temperature {
+    grid-area: temperature;
+    margin-left: 40px;
+}
+.weather {
+    grid-area: weather;
+    margin-left: 40px;
+}
+.icon {
+    grid-area: wicon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city-wrapper {
+    grid-area: city-wrapper;
+    border-bottom: #4299e1 3px solid;
+}
+.btn-close-wrapper {
+    grid-area: btn;
+    margin-left: 500px;
+}
+
+#city-country {
+    margin-left: 40px;
+}
+
+body {
+    background-color: #4299e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    color: #1a202c;
+}
+input,
+button {
+    border: #1a202c 1px solid ;
+    float: left;
+    margin-bottom: 35px;
+}
+input {
+    color: #1a202c;
+    width: 522px;
+    height: 36px;
+}
+button {
+    width: 70px;
+    height: 40px;
+    background-color: #1a202c;
+}
+.hidden {
+    display: none;
+}
+h3 {
+    margin-top: 45px;
+}
+#message,
+#cod {
+    text-align: center;
+}
+
+.btn-close {
+    border: #4299e1 1px solid;
+    color: #4299e1;
+}
+#btn-error {
+    margin-left: 500px;
+}
+
+
+
+
